@@ -1,6 +1,5 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 public class First {
 	public static void main(String[] args) {
@@ -14,10 +13,8 @@ public class First {
 		JLabel label2 = new JLabel();
 		label2.setText("가지마");
 		
-		panel.add(label);
-		panel.add(label2);
-		panel.add(label);
-		frame.add(panel);
+		frame.add(label);
+		frame.add(label2);
 		frame.pack();
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

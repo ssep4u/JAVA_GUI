@@ -1,0 +1,10 @@
+import javax.swing.JFrame;
+
+public class First {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("창이름");
+		
+	}
+
+}
