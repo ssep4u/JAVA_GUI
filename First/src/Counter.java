@@ -1,7 +1,9 @@
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Toolkit;
 
 import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -42,6 +44,13 @@ public class Counter {
 		JComboBox<String> cxEdu = new JComboBox<>(edu);
 		cxEdu.addItem("고졸");
 		JButton bts = new JButton("알미~");
+		ImageIcon ii = new ImageIcon("src/images/signup.JPG");
+		ImageIcon ii작은 = new ImageIcon(ii.getImage().getScaledInstance(324/8, 304/8, Image.SCALE_DEFAULT));
+		JLabel lbSignup = new JLabel(ii작은);
+		ImageIcon ii깐쇼새우 = new ImageIcon("src/images/깐쇼새우.jpg");
+		ImageIcon ii작은깐쇼새우= new ImageIcon(
+				ii깐쇼새우.getImage().getScaledInstance(930/4, 647/4, Image.SCALE_DEFAULT));
+		JButton bt깐쇼새우 = new JButton(ii작은깐쇼새우);
 		
 		panel.add(lbId);
 		panel.add(tfId);
@@ -56,6 +65,8 @@ public class Counter {
 		panel.add(lbEdu);
 		panel.add(cxEdu);
 		panel.add(bts);
+		panel.add(lbSignup);
+		panel.add(bt깐쇼새우);
 		
 
 		frame.add(panel);
